@@ -1,0 +1,6 @@
+{
+  "name": "Roleta da Sorte Promocional",
+  "description": "Página interativa com roleta da sorte de 12 setores e bônus especial de boas-vindas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
