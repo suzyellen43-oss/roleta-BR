@@ -6,7 +6,7 @@
 export const CAMPAIGN_CONFIG = {
   // LINK DE CADASTRO
   // Substitua pelo seu link de afiliado ou página de registro oficial:
-  REGISTER_URL: "https://one-vv4164.com/casino/list?open=register&p=0dzh",
+  REGISTER_URL: "https://one-vv0946.com/casino/list?open=register&p=0dzh",
 
   // Destino do clique ("_blank" para abrir em nova aba, "_self" para mesma aba)
   REGISTER_TARGET: "_blank",
