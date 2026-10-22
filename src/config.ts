@@ -14,7 +14,7 @@ export const CAMPAIGN_CONFIG = {
   // LOGOTIPO DA MARCA
   // Logo oficial 1win configurada conforme solicitação
   BRAND_NAME: "1win",
-  BRAND_TAGLINE: "OFERTA EXCLUSIVA DE BOAS-VINDAS",
+  BRAND_TAGLINE: "OFERTA EXCLUSIVA DE BIENVENIDA",
   LOGO_IMAGE_URL: "/assets/1win-logo.svg",
 
   // CONFIGURAÇÃO DO RESULTADO

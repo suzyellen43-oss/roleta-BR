@@ -24,16 +24,16 @@ export const HeaderLogo: React.FC<HeaderLogoProps> = ({ soundEnabled, onToggleSo
       <div className="flex items-center gap-2 sm:gap-3">
         <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-500/30 text-xs text-blue-200">
           <ShieldCheck className="w-4 h-4 text-cyan-400" />
-          <span className="font-semibold">Promoção Oficial</span>
+          <span className="font-semibold">Promoción Oficial</span>
         </div>
 
         <button
           id="sound-toggle-btn"
           type="button"
           onClick={onToggleSound}
-          title={soundEnabled ? "Silenciar sons" : "Ativar sons"}
+          title={soundEnabled ? "Silenciar sonido" : "Activar sonido"}
           className="p-2 sm:p-2.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-blue-500/30 text-blue-200 hover:text-white transition-all shadow-md active:scale-95 flex items-center justify-center"
-          aria-label={soundEnabled ? "Desativar áudio" : "Ativar áudio"}
+          aria-label={soundEnabled ? "Desactivar audio" : "Activar audio"}
         >
           {soundEnabled ? (
             <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400" />

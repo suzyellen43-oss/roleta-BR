@@ -556,7 +556,7 @@ export const RouletteWheel: React.FC<RouletteWheelProps> = ({
             type="button"
             disabled={isSpinning}
             onClick={onSpinClick}
-            aria-label="Toque para girar a roleta"
+            aria-label="Toca para girar la ruleta"
             className={`
               group relative flex flex-col items-center justify-center
               w-[124px] h-[124px] sm:w-[136px] sm:h-[136px]
@@ -594,7 +594,7 @@ export const RouletteWheel: React.FC<RouletteWheelProps> = ({
                     ) : (
                       <>
                         <span className="text-[11px] sm:text-[12px] font-extrabold tracking-wider text-cyan-200 uppercase drop-shadow-md">
-                          TOQUE
+                          TOCA
                         </span>
                         <span className="text-[10px] sm:text-[11px] font-bold tracking-widest text-white/80 uppercase">
                           PARA

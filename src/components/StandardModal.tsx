@@ -60,7 +60,7 @@ export const StandardModal: React.FC<StandardModalProps> = ({
           id="close-standard-modal-btn"
           type="button"
           onClick={onClose}
-          aria-label="Fechar janela"
+          aria-label="Cerrar ventana"
           className="absolute top-4 right-4 z-10 p-2 rounded-full bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white border border-blue-400/30 transition-all duration-200 active:scale-90"
         >
           <X className="w-5 h-5" />
@@ -86,26 +86,26 @@ export const StandardModal: React.FC<StandardModalProps> = ({
         <div className="space-y-1 mb-5">
           {isNothing ? (
             <div className="inline-block px-3 py-1 rounded-full bg-slate-800/80 border border-slate-600 text-xs font-bold text-slate-300 uppercase tracking-wider">
-              NÃO FOI DESSA VEZ
+              SUERTE PARA LA PRÓXIMA
             </div>
           ) : isMystery ? (
             <div className="inline-block px-3 py-1 rounded-full bg-blue-900/80 border border-blue-400 text-xs font-bold text-cyan-300 uppercase tracking-wider">
-              🎁 SEU RESULTADO
+              🎁 TU RESULTADO
             </div>
           ) : isSpinAgain ? (
             <div className="inline-block px-3 py-1 rounded-full bg-blue-900/80 border border-blue-400 text-xs font-bold text-cyan-300 uppercase tracking-wider">
-              🔄 TENTATIVA EXTRA
+              🔄 INTENTO EXTRA
             </div>
           ) : (
             <div className="inline-block px-3 py-1 rounded-full bg-blue-900/80 border border-blue-400 text-xs font-bold text-cyan-300 uppercase tracking-wider">
-              🎉 PARABÉNS!
+              🎉 ¡FELICIDADES!
             </div>
           )}
 
           <h3 className="text-sm sm:text-base font-semibold text-slate-300 uppercase tracking-wide pt-1">
             {isNothing 
-              ? "Que pena! Você tirou:" 
-              : (isMystery ? "Você conseguiu:" : "Você ganhou:")
+              ? "¡Qué lástima! Te tocó:" 
+              : (isMystery ? "Conseguiste:" : "¡Ganaste:")
             }
           </h3>
 
@@ -115,11 +115,11 @@ export const StandardModal: React.FC<StandardModalProps> = ({
           </div>
 
           <p className="text-xs sm:text-sm text-slate-300 max-w-xs mx-auto">
-            {isNothing && "Não desanime! A sorte pode estar no seu próximo giro."}
-            {isSpinAgain && "Você ganhou mais uma chance grátis para girar a roleta!"}
-            {isMystery && "Seu prêmio misterioso foi reservado! Cadastre-se para revelá-lo."}
-            {isCash && "Seu saldo promocional já está pronto para ser creditado na sua conta."}
-            {isSpins && "Seus giros grátis exclusivos já estão prontos para serem ativados!"}
+            {isNothing && "¡No te desanimes! La suerte puede estar en tu próximo giro."}
+            {isSpinAgain && "¡Ganaste otra oportunidad gratis para girar la ruleta!"}
+            {isMystery && "¡Tu premio misterioso está reservado! Regístrate para descubrirlo."}
+            {isCash && "Tu saldo promocional ya está listo para ser acreditado en tu cuenta."}
+            {isSpins && "¡Tus giros gratis exclusivos ya están listos para activarse!"}
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export const StandardModal: React.FC<StandardModalProps> = ({
               rel="noopener noreferrer"
               className="group w-full flex items-center justify-center gap-2 py-3.5 px-5 rounded-xl bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-extrabold text-sm sm:text-base uppercase tracking-wider shadow-lg shadow-blue-600/40 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
             >
-              <span>RESGATAR PRÊMIO</span>
+              <span>RECLAMAR PREMIO</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
           )}
@@ -156,7 +156,7 @@ export const StandardModal: React.FC<StandardModalProps> = ({
             `}
           >
             <RotateCcw className="w-4 h-4" />
-            <span>{isNothing ? "TENTAR DE NOVO" : "GIRAR DE NOVO"}</span>
+            <span>{isNothing ? "INTENTAR DE NUEVO" : "GIRAR DE NUEVO"}</span>
           </button>
         </div>
       </div>

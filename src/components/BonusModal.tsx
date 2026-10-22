@@ -60,17 +60,17 @@ export const BonusModal: React.FC<BonusModalProps> = ({ isOpen, onClose }) => {
         id="bonus-modal-content"
         className="relative w-full max-w-[420px] max-h-[92vh] overflow-y-auto custom-scrollbar bg-[#152136] rounded-3xl border border-slate-700/60 shadow-[0_15px_60px_rgba(0,0,0,0.85)] p-5 sm:p-6 animate-[scaleIn_0.3s_cubic-bezier(0.16,1,0.3,1)]"
       >
-        {/* TOPO: TÍTULO "Parabéns! Você recebeu:" E BOTÃO FECHAR "X" */}
+        {/* TOPO: TÍTULO "¡Felicidades! Has recibido:" E BOTÃO FECHAR "X" */}
         <div className="flex items-center justify-between mb-3.5">
           <h2 className="text-base sm:text-lg font-bold text-white tracking-wide">
-            Parabéns! Você recebeu:
+            ¡Felicidades! Has recibido:
           </h2>
 
           <button
             id="close-bonus-modal-btn"
             type="button"
             onClick={onClose}
-            aria-label="Fechar janela"
+            aria-label="Cerrar ventana"
             className="p-1 rounded-full text-slate-400 hover:text-white transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
@@ -103,23 +103,23 @@ export const BonusModal: React.FC<BonusModalProps> = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          {/* VALOR DO PRÊMIO CENTRALIZADO: R$ 95,70 */}
+          {/* VALOR DO PRÊMIO CENTRALIZADO: $95,70 */}
           <div className="text-center py-0.5">
             <div className="text-3xl sm:text-4xl font-extrabold text-[#F5B738] tracking-tight font-sans">
-              R$ 95,70
+              $95,70
             </div>
             <p className="text-xs sm:text-[13px] text-slate-400 font-normal mt-0.5">
-              O valor que você já possui
+              El monto que ya tienes
             </p>
           </div>
 
           {/* INFORMAÇÕES DE STATUS */}
           <div className="mt-4 space-y-1.5">
             <div className="text-xs sm:text-sm font-extrabold text-[#F5B738] tracking-wide uppercase">
-              COMPLETE R$ 100,00 PARA SACAR.
+              COMPLETA $100,00 PARA RETIRAR.
             </div>
             <div className="text-xs sm:text-sm font-bold text-white tracking-wide">
-              Método de Pagamento
+              Método de pago
             </div>
           </div>
 
@@ -129,58 +129,58 @@ export const BonusModal: React.FC<BonusModalProps> = ({ isOpen, onClose }) => {
             <div className="absolute left-[24px] top-[26px] bottom-[28px] w-0 border-l-[1.5px] border-dotted border-slate-500/60 pointer-events-none" />
 
             <div className="space-y-4">
-              {/* ETAPA 1: Pedido de pagamento foi enviado */}
+              {/* ETAPA 1: Solicitud de pago enviada */}
               <div className="flex items-start gap-3 relative">
                 <div className="w-5 h-5 rounded-full bg-[#10b981] flex items-center justify-center flex-shrink-0 z-10 shadow-sm mt-0.5">
                   <Check className="w-3.5 h-3.5 text-slate-950 stroke-[3]" />
                 </div>
                 <div className="text-xs sm:text-[13px] text-slate-200 font-medium leading-snug">
-                  Pedido de pagamento foi enviado
+                  Solicitud de pago enviada
                 </div>
               </div>
 
-              {/* ETAPA 2: Ainda faltam 4,30 para você solicitar o saque agora mesmo! */}
+              {/* ETAPA 2: ¡Aún faltan $4,30 para solicitar tu retiro ahora mesmo! */}
               <div className="flex items-start gap-3 relative">
                 <div className="w-5 h-5 rounded-full bg-[#10b981] flex items-center justify-center flex-shrink-0 z-10 shadow-sm mt-0.5">
                   <Check className="w-3.5 h-3.5 text-slate-950 stroke-[3]" />
                 </div>
                 <div className="text-xs sm:text-[13px] text-slate-200 font-medium leading-snug">
-                  Ainda faltam 4,30 para você solicitar o saque agora mesmo!
+                  ¡Aún faltan $4,30 para que solicites tu retiro ahora mismo!
                 </div>
               </div>
 
-              {/* ETAPA 3: Complete R$ 100,00 e o valor será depositado em sua conta. */}
+              {/* ETAPA 3: Completa $100,00 y el monto será depositado en tu cuenta. */}
               <div className="flex items-start gap-3 relative">
                 <div className="w-5 h-5 rounded-full bg-slate-600/70 border border-slate-400 flex items-center justify-center flex-shrink-0 z-10 mt-0.5">
                   <div className="w-1.5 h-1.5 rounded-full bg-slate-200" />
                 </div>
                 <div className="text-xs sm:text-[13px] text-slate-300 font-medium leading-snug">
-                  Complete R$ 100,00 e o valor será depositado em sua conta.
+                  Completa $100,00 y el monto será depositado en tu cuenta.
                 </div>
               </div>
             </div>
           </div>
 
-          {/* NOVO BLOCO: LIBERE MAIS 1 GIRO COM PASSO A PASSO */}
+          {/* NOVO BLOCO: LIBERA 1 GIRO MÁS COM PASSO A PASSO */}
           <div className="mt-3.5 p-3.5 rounded-xl bg-[#141e30] border border-blue-500/30 text-left space-y-2">
             <div className="text-xs sm:text-sm font-black text-white uppercase tracking-wider flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-yellow-400 flex-shrink-0" />
-              <span>LIBERE MAIS 1 GIRO</span>
+              <span>LIBERA 1 GIRO MÁS</span>
             </div>
 
             <div className="space-y-1.5 text-xs sm:text-[12.5px] text-slate-200">
               <div className="flex items-start gap-2">
                 <span className="text-[#00E676] font-bold flex-shrink-0">✓</span>
-                <span className="font-medium">1. Faça seu cadastro na plataforma.</span>
+                <span className="font-medium">1. Regístrate en la plataforma.</span>
               </div>
               <div className="flex items-start gap-2">
                 <span className="text-[#00E676] font-bold flex-shrink-0">✓</span>
-                <span className="font-medium">2. Realize seu primeiro depósito de qualquer valor.</span>
+                <span className="font-medium">2. Realiza tu primer depósito de cualquier monto.</span>
               </div>
               <div className="flex items-start gap-2">
                 <span className="text-[#00E676] font-bold flex-shrink-0">✓</span>
                 <span className="font-medium leading-relaxed">
-                  3. Após a confirmação do seu primeiro depósito, a roleta aparecerá automaticamente na sua tela novamente com 1 novo giro liberado.
+                  3. Tras la confirmación de tu primer depósito, la ruleta aparecerá automáticamente en tu pantalla con 1 nuevo giro disponible.
                 </span>
               </div>
             </div>
@@ -188,7 +188,7 @@ export const BonusModal: React.FC<BonusModalProps> = ({ isOpen, onClose }) => {
 
         </div>
 
-        {/* BOTÃO PRINCIPAL VERDE: "LIBERAR MAIS 1 GIRO" */}
+        {/* BOTÃO PRINCIPAL VERDE: "LIBERAR 1 GIRO MÁS" */}
         <a
           id="cta-invite-friends-btn"
           href={CAMPAIGN_CONFIG.REGISTER_URL}
@@ -197,12 +197,12 @@ export const BonusModal: React.FC<BonusModalProps> = ({ isOpen, onClose }) => {
           onClick={() => {
             (window as any).fbq?.('track', 'Purchase', {
               value: 95.70,
-              currency: 'BRL'
+              currency: 'USD'
             });
           }}
           className="w-full flex items-center justify-center py-3.5 sm:py-4 px-6 rounded-2xl bg-[#00E676] hover:bg-[#00D069] text-[#022c15] font-black text-sm sm:text-base tracking-wide uppercase transition-all duration-200 shadow-[0_8px_25px_rgba(0,230,118,0.35)] active:scale-[0.98] cursor-pointer"
         >
-          <span>LIBERAR MAIS 1 GIRO</span>
+          <span>LIBERAR 1 GIRO MÁS</span>
         </a>
 
       </div>
