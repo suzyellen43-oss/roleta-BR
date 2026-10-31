@@ -93,7 +93,7 @@ export default function App() {
 
   // Status visual da roleta
 
-  const [statusMessage, setStatusMessage] = useState<string>("¡Toca el botón central para girar!");
+  const [statusMessage, setStatusMessage] = useState<string>("Toque no botão central para girar!");
 
 
 
@@ -194,7 +194,7 @@ export default function App() {
 
     // 6. Atualizar status
 
-    setStatusMessage("🎉 ¡1 Nuevo giro disponible! ¡Toca para girar!");
+    setStatusMessage("🎉 1 Novo giro liberado! Toque para girar!");
 
     sound.playWin();
 
@@ -295,7 +295,7 @@ export default function App() {
 
     setIsSpinning(true);
 
-    setStatusMessage("Girando la ruleta de la suerte... ¡Buena suerte!");
+    setStatusMessage("Girando a roleta da sorte... Boa sorte!");
 
 
 
@@ -383,7 +383,7 @@ export default function App() {
 
       sound.playWin();
 
-      setStatusMessage(`🎉 ¡Felicidades! Ganaste: $95,70`);
+      setStatusMessage(`🎉 Parabéns! Você ganhou: R$ 95,70`);
 
       setShowBonusModal(true);
 
@@ -459,7 +459,7 @@ export default function App() {
 
             <Sparkles className="w-3.5 h-3.5 text-yellow-400" />
 
-            <span>RULETA PROMOCIONAL EXCLUSIVA</span>
+            <span>ROLETA PROMOCIONAL EXCLUSIVA</span>
 
           </div>
 
@@ -467,7 +467,7 @@ export default function App() {
 
           <h1 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight">
 
-            GIRA Y GANA
+            GIRE E GANHE
 
           </h1>
 
@@ -475,7 +475,7 @@ export default function App() {
 
           <p className="text-xs sm:text-sm text-slate-300/90 max-w-xs sm:max-w-sm mx-auto font-medium">
 
-            ¡Toca el centro de la ruleta para descubrir tu premio especial de bienvenida!
+            Toque no centro da roleta para descobrir seu prêmio especial de boas-vindas!
 
           </p>
 
@@ -503,13 +503,13 @@ export default function App() {
 
             <div className="text-sm sm:text-base font-black text-emerald-300 uppercase tracking-wide flex items-center justify-center gap-1.5">
 
-              <span>🎉 ¡NUEVO GIRO DISPONIBLE!</span>
+              <span>🎉 NOVO GIRO LIBERADO!</span>
 
             </div>
 
             <p className="text-xs sm:text-sm text-slate-100 font-medium mt-1 leading-snug">
 
-              Tu primer depósito ha sido confirmado. La ruleta ya está lista para que gires de nuevo.
+              Seu primeiro depósito foi confirmado. A roleta já está pronta para você girar novamente.
 
             </p>
 
@@ -583,9 +583,9 @@ export default function App() {
 
               <Gift className="w-4 h-4 text-cyan-400 mb-1" />
 
-              <span className="text-[11px] sm:text-xs font-bold text-slate-200">100% Gratis</span>
+              <span className="text-[11px] sm:text-xs font-bold text-slate-200">100% Grátis</span>
 
-              <span className="text-[9px] sm:text-[10px] text-slate-400">Sin costo para girar</span>
+              <span className="text-[9px] sm:text-[10px] text-slate-400">Sem custo para girar</span>
 
             </div>
 
@@ -595,7 +595,7 @@ export default function App() {
 
           <div className="text-center text-[10px] text-slate-300 leading-relaxed max-w-xs">
 
-            Promoción válida para mayores de 18 años.
+            Promoção válida para maiores de 18 anos.
 
           </div>
 
